@@ -3,7 +3,7 @@ navbar:
   title: "Lab 3 Website"
   left:
     - text: "Lab output"
-      href: Lab3_gapminder.html
+      href: index.html
     - text: "Second page"
       href: about.html
 output_dir: "."
