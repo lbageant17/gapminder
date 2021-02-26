@@ -1,0 +1,10 @@
+---
+title: "Lab3_website.Rmd"
+author: "Liz Bageant"
+date: "2/26/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
