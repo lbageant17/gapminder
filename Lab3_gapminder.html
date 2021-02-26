@@ -284,7 +284,7 @@ $(document).ready(function () {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">First page</a>
+  <a href="Lab3_gapminder.html">Lab output</a>
 </li>
 <li>
   <a href="about.html">Second page</a>
@@ -325,15 +325,14 @@ dim(gap2011)</code></pre>
 ## [9] &quot;region&quot;</code></pre>
 <pre class="r"><code>head(gap2011)</code></pre>
 <pre><code>## # A tibble: 6 x 9
-##   country  year infant_mortality life_expectancy fertility population     gdp
-##   &lt;fct&gt;   &lt;int&gt;            &lt;dbl&gt;           &lt;dbl&gt;     &lt;dbl&gt;      &lt;dbl&gt;   &lt;dbl&gt;
-## 1 Albania  2011             14.3            77.4      1.75    2886010 6.32e 9
-## 2 Algeria  2011             22.8            76.1      2.83   36717132 8.11e10
-## 3 Angola   2011            107.             58.1      6.1    21942296 2.70e10
-## 4 Antigu…  2011              7.2            75.9      2.12      88152 8.02e 8
-## 5 Argent…  2011             12.7            76        2.2    41655616 4.73e11
-## 6 Armenia  2011             15.3            73.5      1.5     2967984 4.29e 9
-## # … with 2 more variables: continent &lt;fct&gt;, region &lt;fct&gt;</code></pre>
+##   country   year infant_mortality life_expectancy fertility population      gdp continent region
+##   &lt;fct&gt;    &lt;int&gt;            &lt;dbl&gt;           &lt;dbl&gt;     &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;fct&gt;     &lt;fct&gt; 
+## 1 Albania   2011             14.3            77.4      1.75    2886010  6.32e 9 Europe    South…
+## 2 Algeria   2011             22.8            76.1      2.83   36717132  8.11e10 Africa    North…
+## 3 Angola    2011            107.             58.1      6.1    21942296  2.70e10 Africa    Middl…
+## 4 Antigua…  2011              7.2            75.9      2.12      88152  8.02e 8 Americas  Carib…
+## 5 Argenti…  2011             12.7            76        2.2    41655616  4.73e11 Americas  South…
+## 6 Armenia   2011             15.3            73.5      1.5     2967984  4.29e 9 Asia      Weste…</code></pre>
 <p><br></p>
 </div>
 <div id="life-expectancy" class="section level2">
