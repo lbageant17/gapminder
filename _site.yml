@@ -4,6 +4,6 @@ navbar:
   left:
     - text: "Lab output"
       href: index.html
-    - text: "Second page"
+    - text: "About"
       href: about.html
 output_dir: "."
