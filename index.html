@@ -308,50 +308,7 @@ $(document).ready(function () {
 </div>
 
 
-<p><br></p>
-<div id="data" class="section level2">
-<h2>Data</h2>
-<p>We use the Gapminder data. The <a href="https://www.gapminder.org/about/">Gapminder Project</a>Gapminder project was pioneered by Hans Rosling, who is famous for describing the prosperity of nations over time through famines, wars and other historic events with this beautiful data visualization in his <a href="https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen">2006 TED Talk: The best stats you’ve ever seen</a>:</p>
-<p>Let’s explore a subset of the data from 2011.</p>
-<pre class="r"><code>gap2011 &lt;- gapminder %&gt;% 
-  as_tibble() %&gt;% 
-  filter(year == 2011)
 
-dim(gap2011)</code></pre>
-<pre><code>## [1] 185   9</code></pre>
-<pre class="r"><code>colnames(gap2011)</code></pre>
-<pre><code>## [1] &quot;country&quot;          &quot;year&quot;             &quot;infant_mortality&quot; &quot;life_expectancy&quot; 
-## [5] &quot;fertility&quot;        &quot;population&quot;       &quot;gdp&quot;              &quot;continent&quot;       
-## [9] &quot;region&quot;</code></pre>
-<pre class="r"><code>head(gap2011)</code></pre>
-<pre><code>## # A tibble: 6 x 9
-##   country  year infant_mortality life_expectancy fertility population     gdp
-##   &lt;fct&gt;   &lt;int&gt;            &lt;dbl&gt;           &lt;dbl&gt;     &lt;dbl&gt;      &lt;dbl&gt;   &lt;dbl&gt;
-## 1 Albania  2011             14.3            77.4      1.75    2886010 6.32e 9
-## 2 Algeria  2011             22.8            76.1      2.83   36717132 8.11e10
-## 3 Angola   2011            107.             58.1      6.1    21942296 2.70e10
-## 4 Antigu…  2011              7.2            75.9      2.12      88152 8.02e 8
-## 5 Argent…  2011             12.7            76        2.2    41655616 4.73e11
-## 6 Armenia  2011             15.3            73.5      1.5     2967984 4.29e 9
-## # … with 2 more variables: continent &lt;fct&gt;, region &lt;fct&gt;</code></pre>
-<p><br></p>
-</div>
-<div id="life-expectancy" class="section level2">
-<h2>Life expectancy</h2>
-<div id="explore-the-distribution-of-life-expectancy-data" class="section level4">
-<h4>Explore the distribution of life expectancy data</h4>
-<p>Histogram: Not very pretty. <img src="index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<p>Density plot: This is nicer. <img src="index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
-</div>
-<div id="what-is-the-relationship-between-life-expectancy-and-fertility" class="section level4">
-<h4>What is the relationship between life expectancy and fertility?</h4>
-<p>Where fertility is higher, life expectancy was lower.</p>
-<pre class="r"><code>ggplot(data = gap2011) +
-  geom_point(mapping = aes(x = fertility, y = life_expectancy, color = continent)) +
-  geom_smooth(mapping = aes(x = fertility, y = life_expectancy)) </code></pre>
-<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
-</div>
-</div>
 
 
 

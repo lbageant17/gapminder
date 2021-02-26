@@ -2,8 +2,8 @@ name: "Lab 3 Website"
 navbar:
   title: "Lab 3 Website"
   left:
-    - text: "First page"
-      href: index.html
+    - text: "Lab output"
+      href: Lab3_gapminder.html
     - text: "Second page"
       href: about.html
 output_dir: "."
